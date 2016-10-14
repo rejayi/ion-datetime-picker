@@ -45,7 +45,7 @@ Live demo is available on [Codepen](http://codepen.io/katemihalikova/full/dYvjzP
 1. Use bower to install the new module:
 
     ```bash
-    bower install ion-datetime-picker --save
+    bower install ion-datetime-picker-extend --save
     ```
 
 2. Import the `ion-datetime-picker` javascript and css file into your HTML file (or use [wiredep](https://github.com/taptapship/wiredep)):
@@ -134,10 +134,10 @@ date-format = "yyyy-MM-dd HH:mm:ss Z"
 date-format = "MM/dd/yyyy"
 
 ```
-## Integrate with text filed
+## Integration with text filed
    Put the `ion-datetime-picker` directive alongside the `ng-model` with text field to tap to show the picker:
 ```html
-<input type="text" placeholder="Date time" ion-datetime-picker date-format="MM/dd/yyyy  h:mma" ng-model="dateTime" name="dateTime" >
+<input type="text" placeholder="Date time" ion-datetime-picker date time monday-first am-pm date-format="MM/dd/yyyy  h:mma" ng-model="dateTime" name="dateTime" >
  
 ```
 
