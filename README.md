@@ -14,7 +14,8 @@
 
 # Introduction
 
-I made this component because of poor implementation of native datetime picker in Android webview. How funny it was when I discovered that I can only pick a time between 0:00 and 11:59 on my 24-hour clock phone :)
+I forked from [picker](https://github.com/katemihalikova/ion-datetime-picker) and made some changes in this component because, while I have itegrated with text box its not showing the selected date. Also I have added 
+new attribute 'date-format' for formating the date.
 
 *Looking for a [picker](http://blog.ionic.io/ionic-2-fixing-date-inputs-for-the-mobile-web/) that works with Ionic framework v2?*
 
