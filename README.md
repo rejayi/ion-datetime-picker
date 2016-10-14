@@ -67,8 +67,8 @@ Put the `ion-datetime-picker` directive alongside the `ng-model` wherever you wa
 
 ```html
 <ion-list>
-    <div class="item" ion-datetime-picker ng-model="datetimeValue">
-        {{datetimeValue| date: "yyyy-MM-dd H:mm:ss"}}
+    <div class="item" ion-datetime-picker date-format="yyyy-MM-dd H:mm:ss"  ng-model="datetimeValue">
+        {{datetimeValue}}
     </div>
 </ion-list>
 ```
@@ -119,6 +119,28 @@ only-valid="{'outside': {'initial': '2016-04-09', 'final': '2016-06-15'}, 'inclu
 ```
 
 Types supported: `'after'`, `'before'`, `'between'` and `'outside'`. If you want to include the day specified, set `'inclusive'` property to `true`.
+
+# Extended Features
+
+## New attributes
+
+###  `date-format` attribute
+
+  Use the 'date-format' attribute for specyfying date format
+
+```html
+date-format = "MM/dd/yyyy  h:mma"
+date-format = "yyyy-MM-dd HH:mm:ss Z"
+date-format = "MM/dd/yyyy"
+
+```
+## Integrate with text filed
+   Put the `ion-datetime-picker` directive alongside the `ng-model` with text field to tap to show the picker:
+```html
+<input type="text" placeholder="Date time" ion-datetime-picker date-format="MM/dd/yyyy  h:mma" ng-model="dateTime" name="dateTime" >
+ 
+```
+
 
 ## Internationalization & customization factory
 

@@ -1,5 +1,5 @@
 angular.module("ion-datetime-picker", ["ionic"])
-    .directive("ionDatetimePicker", function() {
+    .directive("ionDatetimePicker", function($filter) {
         return {
             restrict: "AE",
             require: "ngModel",
@@ -325,8 +325,13 @@ angular.module("ion-datetime-picker", ["ionic"])
                 };
 
                 $scope.commit = function() {
-                    $scope.modelDate = new Date($scope.year, $scope.month, $scope.day, $scope.hour, $scope.minute, $scope.second);
+                    if( $attrs.dateFormat){
+                       $scope.modelDate = $filter('date')(new Date($scope.year, $scope.month, $scope.day, $scope.hour, $scope.minute, $scope.second), $attrs.dateFormat);
+                    }else{
+                       $scope.modelDate = new Date($scope.year, $scope.month, $scope.day, $scope.hour, $scope.minute, $scope.second);
+                    }
                     ngModelCtrl.$setViewValue($scope.modelDate);
+                    $element.val(ngModelCtrl.$viewValue);
                 };
 
                 $element.on("click", $scope.showPopup);
