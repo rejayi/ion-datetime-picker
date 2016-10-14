@@ -14,8 +14,7 @@
 
 # Introduction
 
-I forked from [picker](https://github.com/katemihalikova/ion-datetime-picker) and made some changes in this component because, while I have itegrated with text box its not showing the selected date. Also I have added 
-new attribute 'date-format' for formating the date.
+I forked from [katemihalikova/ion-datetime-picker](https://github.com/katemihalikova/ion-datetime-picker) and made some changes in this component because, while I have integrated with text box, it's not showing the selected date. In addition, I have added new attribute 'date-format' for formatting the date. work. 
 
 *Looking for a [picker](http://blog.ionic.io/ionic-2-fixing-date-inputs-for-the-mobile-web/) that works with Ionic framework v2?*
 
