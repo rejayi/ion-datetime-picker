@@ -45,7 +45,7 @@ Live demo is available on [Codepen](http://codepen.io/katemihalikova/full/dYvjzP
 1. Use bower to install the new module:
 
     ```bash
-    bower install https://github.com/rejayi/ion-datetime-picker.git
+    bower install https://github.com/rejayi/ion-datetime-picker.git#ea298395da017260c243f81a5e3496022c5eeca3
 
     ```
 
