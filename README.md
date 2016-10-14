@@ -45,7 +45,8 @@ Live demo is available on [Codepen](http://codepen.io/katemihalikova/full/dYvjzP
 1. Use bower to install the new module:
 
     ```bash
-    bower install ion-datetime-picker-extended --save
+    bower install https://github.com/rejayi/ion-datetime-picker.git
+
     ```
 
 2. Import the `ion-datetime-picker` javascript and css file into your HTML file (or use [wiredep](https://github.com/taptapship/wiredep)):
