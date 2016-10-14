@@ -73,8 +73,8 @@ Put the `ion-datetime-picker` directive alongside the `ng-model` wherever you wa
     </div>
 </ion-list>
 ```
-## Integration with text filed
-   Put the `ion-datetime-picker` directive alongside the `ng-model` with text field to tap to show the picker:
+## Integration with text field
+  `ion-datetime-picker` directive can integrate with text field as:
   
   ```html
   <input type="text" placeholder="Date time" ion-datetime-picker date time monday-first am-pm date-format="MM/dd/yyyy  h:mma" ng-model="dateTime" name="dateTime" >
@@ -180,7 +180,7 @@ date-format = "MM/dd/yyyy"
 
 ```
 ## Integration with text filed
-   Put the `ion-datetime-picker` directive alongside the `ng-model` with text field to tap to show the picker:
+  
 ```html
 <input type="text" placeholder="Date time" ion-datetime-picker date time monday-first am-pm date-format="MM/dd/yyyy  h:mma" ng-model="dateTime" name="dateTime" >
  
