@@ -120,27 +120,6 @@ only-valid="{'outside': {'initial': '2016-04-09', 'final': '2016-06-15'}, 'inclu
 
 Types supported: `'after'`, `'before'`, `'between'` and `'outside'`. If you want to include the day specified, set `'inclusive'` property to `true`.
 
-# Extended Features
-
-## New attributes
-
-###  `date-format` attribute
-
-  Use the 'date-format' attribute for specyfying date format
-
-```html
-date-format = "MM/dd/yyyy  h:mma"
-date-format = "yyyy-MM-dd HH:mm:ss Z"
-date-format = "MM/dd/yyyy"
-
-```
-## Integration with text filed
-   Put the `ion-datetime-picker` directive alongside the `ng-model` with text field to tap to show the picker:
-```html
-<input type="text" placeholder="Date time" ion-datetime-picker date time monday-first am-pm date-format="MM/dd/yyyy  h:mma" ng-model="dateTime" name="dateTime" >
- 
-```
-
 
 ## Internationalization & customization factory
 
@@ -177,3 +156,25 @@ angular.module("myApp")
 ## Daylight saving time
 
 The datetime picker is using `Date` object with your browser's timezone, including any DST. When you change the date, hour, minute, or second, which sets the time to an invalid value because of moving from 2:00 to 3:00 at the beginning of DST, the time is automatically adjusted to a valid value. On the other hand, when the DST ends, I do NOT take the inserted hour into consideration, but this may be fixed in the future.
+
+
+# Extended Features
+
+## New attributes
+
+###  `date-format` attribute
+
+  Use the 'date-format' attribute for specyfying date format
+
+```html
+date-format = "MM/dd/yyyy  h:mma"
+date-format = "yyyy-MM-dd HH:mm:ss Z"
+date-format = "MM/dd/yyyy"
+
+```
+## Integration with text filed
+   Put the `ion-datetime-picker` directive alongside the `ng-model` with text field to tap to show the picker:
+```html
+<input type="text" placeholder="Date time" ion-datetime-picker date time monday-first am-pm date-format="MM/dd/yyyy  h:mma" ng-model="dateTime" name="dateTime" >
+ 
+```
