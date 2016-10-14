@@ -1,4 +1,4 @@
-# ion-datetime-picker
+# ion-datetime-picker-extended
 ![GitHub version](https://img.shields.io/github/release/katemihalikova/ion-datetime-picker.svg?style=flat-square)
 ![Bower version](https://img.shields.io/bower/v/ion-datetime-picker.svg?style=flat-square)
 ![Ionic version](https://img.shields.io/badge/ionic-%5E1.0.0--beta.9-yellow.svg?style=flat-square)
@@ -45,7 +45,7 @@ Live demo is available on [Codepen](http://codepen.io/katemihalikova/full/dYvjzP
 1. Use bower to install the new module:
 
     ```bash
-    bower install ion-datetime-picker-extend --save
+    bower install ion-datetime-picker-extended --save
     ```
 
 2. Import the `ion-datetime-picker` javascript and css file into your HTML file (or use [wiredep](https://github.com/taptapship/wiredep)):
