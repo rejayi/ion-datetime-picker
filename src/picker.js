@@ -321,6 +321,7 @@ angular.module("ion-datetime-picker", ["ionic"])
 
                 ngModelCtrl.$render = function() {
                     $scope.modelDate = ngModelCtrl.$viewValue;
+                    $element.val(ngModelCtrl.$viewValue);
                     $scope.processModel();
                 };
 
